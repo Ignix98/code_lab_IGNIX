@@ -1,0 +1,40 @@
+# Compilados C/C++
+*.o
+*.out
+*.exe
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+out/
+build/
+.gradle/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Carpetas de salida
+bin/
+dist/
+
+# VS Code
+.vscode/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
