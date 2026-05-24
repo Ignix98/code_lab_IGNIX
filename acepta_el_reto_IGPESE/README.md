@@ -1,3 +1,6 @@
+# ACEPTA EL RETO
+Acepta el Reto es una plataforma de programación competitiva donde resuelves problemas de lógica y algoritmos enviando código que se corrige automáticamente. Se usa mucho para practicar, aprender y prepararse para concursos o entrevistas técnicas.
+
 # GUÍA RÁPIDA: COMPILAR, EJECUTAR Y MEDIR PROGRAMAS
 
 ## 1. Compilar
