@@ -10,11 +10,7 @@
 
 En el ajedrez, la reina es la pieza más poderosa, al poderse mover cualquier número de escaques en vertical, horizontal, o diagonal.
 
-![Movimientos de la reina](https://aceptaelreto.com/pub/problems/v002/44/st/reina.png)
-
 En 1848, el alemán Max Bezzel planteó el puzzle de las 8 reinas, en el que retó a colocar 8 reinas sobre un tablero sin que se atacaran entre sí. Dos años después, se dieron algunas de las 92 soluciones.
-
-![Una de las soluciones posibles](https://aceptaelreto.com/pub/problems/v002/44/st/solucion.png)
 
 Desde entonces, matemáticos y aficionados de todo el mundo han estudiado el problema, generalizándolo a tamaños de tableros de ajedrez de N×N. En 1972, Dijkstra, en plena crisis del software, usó el problema para demostrar el poder de la programación estructurada, y desde entonces es un ejemplo clásico de algoritmo de vuelta atrás.
 
