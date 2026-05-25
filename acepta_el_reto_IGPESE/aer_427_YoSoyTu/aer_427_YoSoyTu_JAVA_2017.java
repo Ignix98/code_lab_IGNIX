@@ -26,6 +26,7 @@ public class aer_427_YoSoyTu_JAVA_2017 {
 			}
 		}
 
+		tec.close();
 	}
 
 }
