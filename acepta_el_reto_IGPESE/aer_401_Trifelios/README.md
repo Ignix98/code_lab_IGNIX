@@ -25,3 +25,20 @@ La entrada comienza con el número de casos de prueba que se deberán procesar. 
 Para cada caso de prueba se escribirá "SI" si la pareja de palabras es un trifelio, y "NO" en otro caso.
 
 Dado que fonéticamente la 'b' y la 'v' son similares, deben considerarse iguales. De nuevo por simplicidad, el resto de idiosincrasias del español deberán ignorarse y considerar por tanto únicamente los trifelios ortográficos. Ten en cuenta que una palabra no forma un trifelio consigo misma ni, en este problema, con sus posibles variaciones de 'b' y 'v'.
+
+## Entrada de ejemplo
+
+5
+monja jamon
+Paco copa
+carro roca
+lavese Besela
+vota bota
+
+## Salida de ejemplo
+
+SI
+SI
+NO
+SI
+NO

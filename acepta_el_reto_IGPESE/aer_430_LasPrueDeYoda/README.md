@@ -25,3 +25,23 @@ La entrada acaba con un 0.
 ## Salida
 
 Por cada caso de prueba, el programa escribirá cuantos días faltan para que Luke haga su última prueba. Se garantiza que tardará como mucho 10^6 días en terminar.
+
+## Entrada de ejemplo
+
+2
+1 1
+1 1
+2
+4 1
+1 1
+3
+4 8
+7 2
+5 10
+0
+
+## Salida de ejemplo
+
+2
+5
+15

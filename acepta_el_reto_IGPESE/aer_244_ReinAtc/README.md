@@ -27,3 +27,19 @@ La entrada termina con un caso de prueba con un tablero de tamaño 0×0 y sin re
 ## Salida
 
 Para cada caso de prueba, el programa escribirá, en la salida estándar, una línea con el texto `SI` si hay reinas atacadas en la configuración dada, y `NO` en otro caso (sin las comillas).
+
+## Entrada de ejemplo
+
+8 8
+1 2 2 8 3 6 4 1 5 3 6 5 7 7 8 4
+4 2
+1 1 3 3
+4 2
+1 1 3 2
+0 0
+
+## Salida de ejemplo
+
+NO
+SI
+NO
