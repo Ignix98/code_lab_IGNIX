@@ -28,17 +28,21 @@ Dado que fonéticamente la 'b' y la 'v' son similares, deben considerarse iguale
 
 ## Entrada de ejemplo
 
+```txt
 5
 monja jamon
 Paco copa
 carro roca
 lavese Besela
 vota bota
+```
 
 ## Salida de ejemplo
 
+```txt
 SI
 SI
 NO
 SI
 NO
+```

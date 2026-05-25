@@ -24,18 +24,22 @@ Si no se puede formar ningún palíndromo se escribirá NO HAY.
 
 ## Entrada de ejemplo
 
+```txt
 lamentablemente
 rollo
 conocen
 reordenando
 ala
 palindromo
+```
 
 ## Salida de ejemplo
 
+```txt
 aeelmntbtnmleea
 lorol
 cnoeonc
 denoraroned
 ala
 NO HAY
+```

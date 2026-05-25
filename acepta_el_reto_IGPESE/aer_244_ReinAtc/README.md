@@ -30,6 +30,7 @@ Para cada caso de prueba, el programa escribirá, en la salida estándar, una l�
 
 ## Entrada de ejemplo
 
+```txt
 8 8
 1 2 2 8 3 6 4 1 5 3 6 5 7 7 8 4
 4 2
@@ -37,9 +38,12 @@ Para cada caso de prueba, el programa escribirá, en la salida estándar, una l�
 4 2
 1 1 3 2
 0 0
+```
 
 ## Salida de ejemplo
 
+```txt
 NO
 SI
 NO
+```
