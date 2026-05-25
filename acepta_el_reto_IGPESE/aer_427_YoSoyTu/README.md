@@ -27,7 +27,7 @@ Cada caso de prueba constará de dos líneas, ambas de no más de 100 caracteres
 Para cada caso de prueba, el programa generará la frase que se debía filtrar a la prensa siguiendo el esquema descrito, salvo que el personaje y el parentesco sean, exactamente, "Luke" y "padre" respectivamente. En ese caso se escribirá "TOP SECRET". Esta comparación será sensible a mayúsculas.
 
 ## Entrada de ejemplo
-
+```txt
 4
 C-3PO
 creador
@@ -37,10 +37,13 @@ Princesa
 Principe
 Luke
 Padre
+```
 
 ## Salida de ejemplo
 
+```txt
 C-3PO, yo soy tu creador
 TOP SECRET
 Princesa, yo soy tu Principe
 Luke, yo soy tu Padre
+```
