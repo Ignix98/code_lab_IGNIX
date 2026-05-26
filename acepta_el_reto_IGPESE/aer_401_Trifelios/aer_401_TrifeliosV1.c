@@ -5,6 +5,10 @@
  * Autor: Ignacio Pérez Serra
  * Fecha: 25/05/2026
  * Versión: 1.0
+ * 
+ * Extra:
+ * - Se va a van a convertir la r que estén al principio en doble rr, para tener un trifelio más difícil de detectar.
+ * 
  */
 
 // Esquema de la entrada: número de casos
@@ -32,11 +36,12 @@ int igualesNormalizadas(char A[], char B[], int tam) {
 
     // Recorremos las dos palabras letra por letra
     for (i = 0; i < tam; i++) {
-
+        
         // Comparamos las letras ya preparadas
         if (normalizar(A[i]) != normalizar(B[i])) {
             return 0; // No son iguales
         }
+
     }
 
     return 1; // Son iguales
@@ -48,17 +53,30 @@ void casoDePrueba() {
 
     // Leemos las dos palabras
     scanf("%s %s", A, B);
+    
 
     // Calculamos el tamaño de cada palabra
-    int tamA = strlen(A);
-    int tamB = strlen(B);
-
     int i, desplazamiento;
 
     // Esta variable indica si hemos encontrado que son trifelios
     // 0 = no son trifelios
     // 1 = sí son trifelios
     int trifelios = 0;
+
+    if (B[0] == 'r' || B[0] == 'R') {
+        if (B[1] != 'r' && B[1] != 'R') {
+            memmove(B + 1, B, strlen(B) + 1);
+            //printf("B['%s']\n", B);
+        }
+    }else if (A[0] == 'r' || A[0] == 'R') {
+        if (A[1] != 'r' && A[1] != 'R') {
+            memmove(A + 1, A, strlen(A) + 1);
+            //printf("A['%s']\n", A);
+        }
+    }
+
+    int tamA = strlen(A);
+    int tamB = strlen(B);
 
     if (tamA != tamB) {
         printf("NO\n");
