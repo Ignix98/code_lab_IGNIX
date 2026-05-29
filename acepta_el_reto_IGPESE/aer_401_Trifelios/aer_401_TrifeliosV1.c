@@ -63,6 +63,8 @@ void casoDePrueba() {
     // 1 = sí son trifelios
     int trifelios = 0;
 
+    // Si se descomenta el bloque de código siguiente, se convierte la r que esté al principio en doble rr, para tener un trifelio más difícil de detectar.
+    /*
     if (B[0] == 'r' || B[0] == 'R') {
         if (B[1] != 'r' && B[1] != 'R') {
             memmove(B + 1, B, strlen(B) + 1);
@@ -74,7 +76,7 @@ void casoDePrueba() {
             //printf("A['%s']\n", A);
         }
     }
-
+    */
     int tamA = strlen(A);
     int tamB = strlen(B);
 
@@ -92,25 +94,25 @@ void casoDePrueba() {
             int coincide = 1;
 
             for (i = 0; i < tamA && coincide; i++) {
-            // Si llegamos al final de la palabra, volvemos al principio, esto se debe a que obtenemos el resto de la división.
-            // Por ejemplo, si el desplazamiento es 2 y el tamaño es 5, entonces:
-            // i = 0 -> A[2] (desplazamiento 2)
-            // i = 1 -> A[3] (desplazamiento 2)
-            // i = 2 -> A[4] (desplazamiento 2)
-            // i = 3 -> A[0] (desplazamiento 2, redondeo al principio)
-            // i = 4 -> A[1] (desplazamiento 2, redondeo al principio)
-            char letraADesplazada = A[(i + desplazamiento) % tamA];
+                // Si llegamos al final de la palabra, volvemos al principio, esto se debe a que obtenemos el resto de la división.
+                // Por ejemplo, si el desplazamiento es 2 y el tamaño es 5, entonces:
+                // i = 0 -> A[2] (desplazamiento 2)
+                // i = 1 -> A[3] (desplazamiento 2)
+                // i = 2 -> A[4] (desplazamiento 2)
+                // i = 3 -> A[0] (desplazamiento 2, redondeo al principio)
+                // i = 4 -> A[1] (desplazamiento 2, redondeo al principio)
+                char letraADesplazada = A[(i + desplazamiento) % tamA];
 
-            // Mostramos qué letras se están comparando
-            // printf("Comparando A[%d] con B[%d]: '%c' vs '%c'\n", 
-            //        (i + desplazamiento) % tamA, i, 
-            //        normalizar(letraADesplazada), normalizar(B[i]));
+                // Mostramos qué letras se están comparando
+                // printf("Comparando A[%d] con B[%d]: '%c' vs '%c'\n", 
+                //        (i + desplazamiento) % tamA, i, 
+                //        normalizar(letraADesplazada), normalizar(B[i]));
 
-            // Comparamos la letra de A desplazada con la letra de B en la misma posición.
-            // Antes de comparar, normalizamos las letras para ignorar mayúsculas y tratar b/v igual.
-            if (normalizar(letraADesplazada) != normalizar(B[i])) {
-                coincide = 0; 
-}
+                // Comparamos la letra de A desplazada con la letra de B en la misma posición.
+                // Antes de comparar, normalizamos las letras para ignorar mayúsculas y tratar b/v igual.
+                if (normalizar(letraADesplazada) != normalizar(B[i])) {
+                    coincide = 0; 
+                }
             }
 
             // Si todas las letras han coincidido,
